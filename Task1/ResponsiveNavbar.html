@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Responsive Navbar</title>
+	<link rel="stylesheet" type="text/css" href="ResponsiveNavbar.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+<body>
+	<nav>
+		<span class="logo">
+			<span class="text">
+				C<i class="fa fa-dot-circle-o"></i>DELAB.I<i class="fa fa-dot-circle-o"></i>
+			</span>
+		</span>
+		
+		<!---------- Navigation links------------->
+		<ul class="nav-links">
+			<a href="#" class="services"> 
+				<li>Services </li>
+			</a>
+			<a href="#" class="about-us">
+				<li>About Us</li>
+			</a>
+			<a href="#" class="resources">
+				<li>Resources</li>
+			</a>
+			<a href="#" class="sign-in">
+				<li>Sign In</li>
+			</a>
+			<a href="#" class="get-started">
+				<li>Get Started</li>
+			</a>
+		</ul>
+		<!----- Hamburger / Collapsible------->
+		<span class="hamburger">
+			<a href="#" onclick="toggle()"><i class="fa fa-bars"></i></a>
+		</span>
+		<ul class="collapsible" id="collapsible">
+			<a href="#" class="services-col"> 
+				<li>Services </li>
+			</a>
+			<a href="#" class="about-col">
+				<li>About Us</li>
+			</a>
+			<a href="#" class="resources-col">
+				<li>Resources</li>
+			</a>
+			<a href="#" class="sign-in-col">
+				<li>Sign In</li>
+			</a>
+			<a href="#" class="get-started-col">
+				<li>Get Started</li>
+			</a>
+		</ul>
+	</nav>
+	<script type="text/javascript">
+		 function toggle(){
+			var content = document.getElementById('collapsible');
+			if(content.style.top === '-9999px'){
+				content.style.top = '76px';
+			}else{
+				content.style.top = '-9999px';
+			}
+		}
+	</script>
+</body>
+</html>
