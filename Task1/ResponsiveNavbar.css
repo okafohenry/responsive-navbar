@@ -64,7 +64,7 @@ a.services:hover, a.about-us:hover, a.resources:hover, a.sign-in:hover{
 	top: 70px;
 }
 .hamburger{
-	font-size: 25px;
+	font-size: 20px;
 	float: right;
 	margin-right: 50px;
 }
@@ -93,6 +93,9 @@ a.get-started-col {
 @media screen and (max-width: 880px){
 	body, .collapsible{
 		min-width: 349px;
+	}
+	.logo{
+		font-size: 18px;
 	}
 	.nav-links{
 		display: none;
