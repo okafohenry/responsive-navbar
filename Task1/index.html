@@ -35,7 +35,7 @@
 		</ul>
 		<!----- Hamburger / Collapsible------->
 		<span class="hamburger">
-			<a href="#" onclick="toggle()"><i class="fa fa-bars"></i></a>
+			<a href="#" id="hamburger"><i class="fa fa-bars"></i></a>
 		</span>
 		<ul class="collapsible" id="collapsible">
 			<a href="#" class="services-col"> 
@@ -56,14 +56,16 @@
 		</ul>
 	</nav>
 	<script type="text/javascript">
-		 function toggle(){
+		const hamburger = document.getElementById('hamburger');
+		hamburger.addEventListener('click', function(){
 			var content = document.getElementById('collapsible');
 			if(content.style.top === '-9999px'){
 				content.style.top = '76px';
 			}else{
 				content.style.top = '-9999px';
 			}
-		}
+		})
+		 
 	</script>
 </body>
 </html>
