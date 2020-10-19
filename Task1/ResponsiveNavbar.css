@@ -53,7 +53,7 @@ a.services:hover, a.about-us:hover, a.resources:hover, a.sign-in:hover{
 	position: absolute;
 	top: -9999px;
 
-	transition: 1s ease-in-out;
+	transition: 0.2s ease-in-out;
 }
 .collapsible a{
 	text-align: center;
@@ -89,7 +89,7 @@ a.get-started-col {
 	display: block;
 }
 
-@media screen and (max-width: 880px){
+@media screen and (max-width: 850px){
 	body, .collapsible{
 		min-width: 349px;
 	}
@@ -106,7 +106,7 @@ a.get-started-col {
 		width: 20%;
 	}
 }
-@media screen and (min-width: 880px){
+@media screen and (min-width: 851px){
 	.collapsible{
 		display: none;
 	}
